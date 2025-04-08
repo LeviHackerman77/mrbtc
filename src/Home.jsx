@@ -11,22 +11,23 @@ export default function Home() {
 
                     <div className="relative inline-block">
   {/* Spotlight behind the text */}
-  <div className="blur-100 absolute inset-0 top-0 -z-10  bg-white  blur-[0px] opacity-7 scale-93 h-[200px] transform skew-x-[-40deg] translate-y-12 translate-x-[-70px]  bg-gradient-to-b from-gray-200 via-[#203240] to-[#14222e] "></div>
+  <div className="blur-100 absolute inset-0 top-0 -z-10 bg-white blur-[0px] opacity-7 scale-93 h-[200px] transform skew-x-[-40deg] translate-y-12 translate-x-[-70px] bg-gradient-to-b from-gray-200 via-[#203240] to-[#14222e]"></div>
 
   {/* Text */}
-  <span className="text-[#ef4c23] font-bold drop-shadow-md">
+  <span className="text-[#ef4c23] font-bold drop-shadow-md text-3xl sm:text-5xl md:text-7xl">
     MRBTCGAMBLER
   </span>
 
-  {/* LEFT SIDE DICE */}
-  <img className="w-8 absolute -top-8 -left-16 animate-float1 rotate-12" src={dice} alt="dice" />
-  <img className="w-9 absolute -top-3 -left-24 animate-float2 -rotate-6" src={dice} alt="dice" />
-  <img className="w-7 absolute top-5 -left-20 animate-float3 rotate-[22deg]" src={dice} alt="dice" />
+  {/* LEFT SIDE DICE (hidden on small screens) */}
+  <img className="w-8 absolute -top-8 -left-16 animate-float1 rotate-12 hidden sm:block" src={dice} alt="dice" />
+  <img className="w-9 absolute -top-3 -left-24 animate-float2 -rotate-6 hidden sm:block" src={dice} alt="dice" />
+  <img className="w-7 absolute top-5 -left-20 animate-float3 rotate-[22deg] hidden sm:block" src={dice} alt="dice" />
 
-  {/* RIGHT SIDE DICE */}
-  <img className="w-9 absolute -top-6 -right-16 animate-float2 rotate-[18deg]" src={dice} alt="dice" />
-  <img className="w-8 absolute top-4 -right-24 animate-float3 -rotate-12" src={dice} alt="dice" />
+  {/* RIGHT SIDE DICE (hidden on small screens) */}
+  <img className="w-9 absolute -top-6 -right-16 animate-float2 rotate-[18deg] hidden sm:block" src={dice} alt="dice" />
+  <img className="w-8 absolute top-4 -right-24 animate-float3 -rotate-12 hidden sm:block" src={dice} alt="dice" />
 </div>
+
 
 
 
