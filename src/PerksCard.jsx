@@ -1,7 +1,7 @@
 import { DollarSign, Trophy, Lock } from "lucide-react";
-import trophy from "./assets/trophy.png"
-import alp from "./assets/alp2.png"
-import bill from "./assets/bill.png"
+import trophy from "/assets/trophy.png"
+import alp from "/assets/alp2.png"
+import bill from "/assets/bill.png"
 
 const perks = [
   {
