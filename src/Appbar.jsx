@@ -76,19 +76,19 @@ export default function Appbar() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden pb-4 space-y-2">
-            <Button variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
+            <Button onClick={()=>{navigate('/home')}} variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
               <House className="mr-2 h-4 w-4" />
               Home
             </Button>
-            <Button variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
+            <Button onClick={()=>{navigate('/leaderboard')}} variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
               <Trophy className="mr-2 h-4 w-4" />
               Leaderboard
             </Button>
-            <Button variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
+            <Button onClick={()=>{navigate('/alphaverse')}} variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
               <Cog className="mr-2 h-4 w-4" />
               Alphaverse
             </Button>
-            <Button variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
+            <Button onClick={()=>{navigate('/vipcalculator')}} variant="ghost" className="w-full justify-start text-white hover:bg-[#2a3b4a]">
               <ChartNetwork className="mr-2 h-4 w-4" />
               Seed Analyzer
             </Button>
