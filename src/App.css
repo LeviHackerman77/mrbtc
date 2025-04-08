@@ -1,0 +1,52 @@
+/* src/App.css */
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap'); /* for navbar-style text */
+
+/* Font assignments */
+
+
+
+
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  .animate-float-1 {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-2 {
+    animation: float 8s ease-in-out infinite 1s;
+  }
+
+  .animate-float-3 {
+    animation: float 7s ease-in-out infinite 2s;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
